@@ -1,6 +1,6 @@
 module Wizard
   module User
-    STEPS = %w(step1 step2).freeze
+    STEPS = %w(step1 step2 step3 step4).freeze
 
     class Base
       include ActiveModel::Model
@@ -18,21 +18,24 @@ module Wizard
     end
 
     class Step2 < Step1
-      #validates :zip_code, presence: true
-      #validates :first_name, presence: true
-      #validates :last_name, presence: true
-      #validates :email, presence: true, format: { with: /@/ }
+      validates :gender, presence: true
+      validates :age, presence: true
     end
 
     class Step3 < Step2
-      #validates :address_1, presence: true
-      #validates :zip_code, presence: true
-      #validates :city, presence: true
-      #validates :country, presence: true
+      validates :tobacco, presence: true
+      validates :weight, presence: true
+      validates :medical, presence: true
+      validates :family_illness, presence: true
+      validates :license, presence: true
+      validates :height, presence: true
     end
 
     class Step4 < Step3
-      #validates :phone_number, presence: true
+      validates :medical, presence: true
     end
   end
 end
+
+  
+

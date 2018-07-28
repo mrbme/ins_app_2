@@ -13,15 +13,24 @@
 <div id="zipcode" class="invisible"><%= @user_wizard.zip_code %></div>
 <div style="font-size:3em; width: 60%;" id="empty_zip" class="text-center m-auto"></div>
 
+<div stlye="width: 60%" class="m-auto">
 <%= simple_form_for @user_wizard, as: :user_wizard, url: validate_step_wizard_path do |f| %>
-  <%= f.error_notification %>
-
-  <%= hidden_field_tag :current_step, 'step2' %>
-  <%= f.input :first_name %>
-  <%= f.input :last_name %>
-  <%= f.submit 'Continue', class: "btn btn-primary" %>
+<%= f.error_notification %>
+   <%= hidden_field_tag :current_step, 'step2' %>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Birth Date</label>
+    <%= f.date_field :age, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Gender</label>
+     <%= f.select :gender, ['male', 'female'], class: "form-control" %>
+  </div>
+  <%= f.submit 'Next', class: "btn btn-primary" %>
 <% end %>
 </div>
+
+
+
 
 <script type="text/javascript">
 $(document).ready(function() {
