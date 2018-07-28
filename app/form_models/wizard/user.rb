@@ -18,15 +18,15 @@ module Wizard
     end
 
     class Step2 < Step1
-       validates :zip_code, presence: true
+      #validates :zip_code, presence: true
       #validates :first_name, presence: true
       #validates :last_name, presence: true
-      validates :email, presence: true, format: { with: /@/ }
+      #validates :email, presence: true, format: { with: /@/ }
     end
 
     class Step3 < Step2
       #validates :address_1, presence: true
-      validates :zip_code, presence: true
+      #validates :zip_code, presence: true
       #validates :city, presence: true
       #validates :country, presence: true
     end

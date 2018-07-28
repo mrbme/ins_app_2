@@ -1456,3 +1456,391 @@ Processing by WizardsController#validate_step as HTML
 Completed 200 OK in 21ms (Views: 19.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2018-07-28 11:55:59 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 427ms (Views: 227.9ms)
+
+
+Started GET "/" for ::1 at 2018-07-28 11:56:52 -0500
+  
+ActionController::RoutingError (uninitialized constant WizardController):
+  
+activesupport (5.0.7) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.7) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.7) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.7) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.7) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.7) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.7) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.7) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.7) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.7) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.7) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.7) lib/action_dispatch/routing/route_set.rb:727:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.7) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.7) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.7) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.7) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7) lib/rails/engine.rb:522:in `call'
+rack (2.0.5) lib/rack/handler/webrick.rb:86:in `service'
+/Users/BME/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+/Users/BME/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+/Users/BME/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered collection of /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [13 times] (11.0ms)
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.0ms)
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (197.2ms)
+Started GET "/" for ::1 at 2018-07-28 11:57:11 -0500
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:12:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.3ms)
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (96.3ms)
+Started GET "/" for ::1 at 2018-07-28 11:57:27 -0500
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:12:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (95.4ms)
+Started GET "/" for ::1 at 2018-07-28 11:57:40 -0500
+  
+SyntaxError (/Users/BME/Documents/GitHub/ins_app_2/config/routes.rb:12: syntax error, unexpected =>, expecting keyword_end
+  root => ':step1'
+       ^~
+/Users/BME/Documents/GitHub/ins_app_2/config/routes.rb:14: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+config/routes.rb:12: syntax error, unexpected =>, expecting keyword_end
+config/routes.rb:14: syntax error, unexpected keyword_end, expecting end-of-input
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.9ms)
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (89.4ms)
+Started GET "/" for ::1 at 2018-07-28 11:58:05 -0500
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:12:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (115.2ms)
+Started GET "/" for ::1 at 2018-07-28 11:58:10 -0500
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:12:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (92.6ms)
+Started GET "/" for ::1 at 2018-07-28 11:59:11 -0500
+  
+ArgumentError (must be called with a path and/or options):
+  
+config/routes.rb:2:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.3ms)
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (94.9ms)
+Started GET "/" for ::1 at 2018-07-28 11:59:23 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_nav.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 19ms (Views: 16.6ms)
+
+
+Started GET "/" for ::1 at 2018-07-28 12:00:54 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_nav.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 20ms (Views: 17.4ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-28 12:00:56 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (91.1ms)
+  Rendered layouts/_nav.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 192ms (Views: 108.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-28 12:01:07 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 19ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-07-28 12:01:16 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 21ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-28 12:01:21 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-28 12:03:19 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_nav.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 25ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-28 12:03:41 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-28 12:04:04 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_nav.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-28 12:04:41 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 21ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-28 12:04:53 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_nav.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/wizard/validate_step" for ::1 at 2018-07-28 12:04:59 -0500
+Processing by WizardsController#validate_step as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EUmhzHQn9nGw+ABvhLFFELk7iVgDBlx2E7UOLg9to7UMmhJQAVkH++esHRd1WrouGuLc6EqHoFSwsEPNEPO/3g==", "current_step"=>"step1", "user_wizard"=>{"zip_code"=>"66212"}, "commit"=>"Get Started"}
+Redirected to http://localhost:3000/wizard/step2
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 12:04:59 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_nav.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 21ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 12:06:08 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 20ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 12:06:39 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 21ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 12:06:58 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 21ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-28 13:54:07 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (16.9ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 87ms (Views: 77.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-28 13:54:36 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 26ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/wizard/validate_step" for ::1 at 2018-07-28 13:54:39 -0500
+Processing by WizardsController#validate_step as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yKEoNkzKeiYkXQMZoqJjQfmCXCWIZ0qCe7n/4Y+MIFHVcpuqObSLrHMJHmFTSZx/WlsJlcHmtqDYvLICkBI8Og==", "current_step"=>"step1", "user_wizard"=>{"zip_code"=>"66212"}, "commit"=>"Get Started"}
+Redirected to http://localhost:3000/wizard/step2
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 13:54:39 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 27ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 13:54:54 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 26ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddAttsToUser (20180728190200)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "users" ADD "age" varchar[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "users" ADD "gender" varchar[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "users" ADD "height" varchar[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "users" ADD "weight" varchar[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "users" ADD "tabacco" varchar[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "users" ADD "medical" varchar[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "users" ADD "family_illness" varchar[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "license" varchar[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180728190200"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/wizard/step2" for ::1 at 2018-07-28 14:06:44 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (11.9ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 82ms (Views: 34.6ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/wizard/validate_step" for ::1 at 2018-07-28 14:06:46 -0500
+Processing by WizardsController#validate_step as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B7zYlNylpVCMDAb0q/Poc9cuWrRjmpZMmvpv1SPD/SYab2sIqdtU2ttYG4xaGBdNdPcPBCobam45/yI2PF3hTQ==", "current_step"=>"step2", "user_wizard"=>{"first_name"=>"blakeasdfa", "last_name"=>"epstasdfasdfein"}, "commit"=>"Continue"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/wizard/step1
+Completed 302 Found in 9ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-28 14:06:46 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 29ms (Views: 24.6ms | ActiveRecord: 0.0ms)
+
+
