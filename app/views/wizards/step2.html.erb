@@ -1,0 +1,44 @@
+<div class="d-flex justify-content-between">
+	<h4>Basic</h4>
+	<h4>Health</h4>
+	<h4>Coverage</h4>
+	<h4>Quotes</h4>
+</div>
+
+<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+<div id="zipcode" class="invisible"><%= @user_wizard.zip_code %></div>
+<div style="font-size:3em; width: 60%;" id="empty_zip" class="text-center m-auto"></div>
+
+<%= simple_form_for @user_wizard, as: :user_wizard, url: validate_step_wizard_path do |f| %>
+  <%= f.error_notification %>
+
+  <%= hidden_field_tag :current_step, 'step2' %>
+  <%= f.input :first_name %>
+  <%= f.input :last_name %>
+  <%= f.submit 'Continue', class: "btn btn-primary" %>
+<% end %>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    var x = $('#zipcode');
+    var zipcode = x.text();
+    console.log(zipcode);
+    $.ajax({
+        method: 'get',
+        url: 'http://api.zippopotam.us/us/' + zipcode,
+        dataType: 'json',
+        success: function(data, status, jqXHR) {
+            console.log(data.places["0"]["place name"]);
+            var city = data.places["0"]["place name"];
+            if (city !== null || city !== '' || typeof city !== 'undefined') {
+                console.log(city);
+                var y = document.getElementById('empty_zip');
+                y.innerHTML += "Ok, we've found great carriers in" + " " + city + "!";
+            }
+        }
+    });
+});
+</script>

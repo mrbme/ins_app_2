@@ -1,0 +1,1458 @@
+Started GET "/" for ::1 at 2018-07-27 14:38:24 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 4456ms (Views: 3840.9ms)
+
+
+  
+ArgumentError (key must be 32 bytes):
+  
+activesupport (5.0.0.1) lib/active_support/message_encryptor.rb:72:in `key='
+activesupport (5.0.0.1) lib/active_support/message_encryptor.rb:72:in `_encrypt'
+activesupport (5.0.0.1) lib/active_support/message_encryptor.rb:58:in `encrypt_and_sign'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/cookies.rb:592:in `commit'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/cookies.rb:465:in `[]='
+actionpack (5.0.0.1) lib/action_dispatch/middleware/session/cookie_store.rb:117:in `set_cookie'
+rack (2.0.1) lib/rack/session/abstract/id.rb:353:in `commit_session'
+rack (2.0.1) lib/rack/session/abstract/id.rb:224:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/Users/BME/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+/Users/BME/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+/Users/BME/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.3ms)
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (121.1ms)
+Started GET "/" for ::1 at 2018-07-27 14:41:18 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 3995ms (Views: 3808.3ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-27 14:41:25 -0500
+Processing by WizardsController#step1 as HTML
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 2.0ms)
+
+
+  
+ActiveRecord::StatementInvalid (Could not find table 'users'):
+  
+app/form_models/wizard/user.rb:12:in `initialize'
+app/controllers/wizards_controller.rb:43:in `new'
+app/controllers/wizards_controller.rb:43:in `wizard_user_for_step'
+app/controllers/wizards_controller.rb:33:in `load_user_wizard'
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (115.6ms)
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20161129002314)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "email" varchar, "address_1" varchar, "address_2" varchar, "zip_code" varchar, "city" varchar, "country" varchar, "phone_number" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161129002314"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-07-27 19:41:40.677670"], ["updated_at", "2018-07-27 19:41:40.677670"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/wizard/step1" for ::1 at 2018-07-27 14:42:13 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (311.1ms)
+Completed 200 OK in 928ms (Views: 634.9ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for ::1 at 2018-07-27 14:42:19 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 88ms (Views: 84.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-27 14:42:20 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 104ms (Views: 100.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-07-27 17:38:56 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 275ms (Views: 262.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-27 17:39:00 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 132ms (Views: 128.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-27 17:49:16 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (129.1ms)
+Completed 200 OK in 884ms (Views: 563.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-27 17:49:20 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 66ms (Views: 63.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-07-27 17:49:54 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 45ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-27 17:50:30 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 44ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/wizard/validate_step" for ::1 at 2018-07-27 17:50:35 -0500
+Processing by WizardsController#validate_step as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FTxT/eksnLWAhMBKw9rwR10iJWtEHGy6h6g9J6D8j5yEYdNXopi3altU00bczMzF4i9PvM5p2AesxorWLduYbQ==", "current_step"=>"step1", "user_wizard"=>{"email"=>"adsf@asdfsd.com"}, "commit"=>"Continue"}
+Redirected to http://localhost:3000/wizard/step2
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-27 17:50:35 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 50ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/wizard/validate_step" for ::1 at 2018-07-27 17:50:37 -0500
+Processing by WizardsController#validate_step as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vFP0wZ8JdEnICr7Y1kw1MOyjvDHf4UBHVvBRE1K59wQtDnRr1L1flhPardTJWgmyU67W5lWU9Pp9nubi357g9Q==", "current_step"=>"step2", "user_wizard"=>{"first_name"=>"aSDasd", "last_name"=>"aSDsad"}, "commit"=>"Continue"}
+Redirected to http://localhost:3000/wizard/step3
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step3" for ::1 at 2018-07-27 17:50:37 -0500
+Processing by WizardsController#step3 as HTML
+  Rendering wizards/step3.html.erb within layouts/application
+  Rendered wizards/step3.html.erb within layouts/application (97.9ms)
+Completed 200 OK in 140ms (Views: 136.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/wizard/validate_step" for ::1 at 2018-07-27 17:50:48 -0500
+Processing by WizardsController#validate_step as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RieHBnpIWNyIFEcsNMZaU/nfBYk1PIVDLSwY2ST5bQXXegesMfxzA1PEVCAr0GbRRtJvXr9JMf4GQq8oqd569A==", "current_step"=>"step3", "user_wizard"=>{"address_1"=>"11011", "address_2"=>"", "zip_code"=>"12345", "city"=>"kansas city", "country"=>"UM"}, "commit"=>"Continue"}
+Redirected to http://localhost:3000/wizard/step4
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step4" for ::1 at 2018-07-27 17:50:48 -0500
+Processing by WizardsController#step4 as HTML
+  Rendering wizards/step4.html.erb within layouts/application
+  Rendered wizards/step4.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 43ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/wizard/validate_step" for ::1 at 2018-07-27 17:50:53 -0500
+Processing by WizardsController#validate_step as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R5UIOPv1vtq6IvAF6gHKsO7EsKK0DDcvzGgazWeYtP7WyIiSsEGVBWHy4wn1F/YyUcnadT55g5LnBq086r+jDw==", "current_step"=>"step4", "user_wizard"=>{"phone_number"=>"9139092333"}, "commit"=>"Finish"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address_1", "address_2", "zip_code", "city", "country", "phone_number", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "aSDasd"], ["last_name", "aSDsad"], ["email", "adsf@asdfsd.com"], ["address_1", "11011"], ["address_2", ""], ["zip_code", "12345"], ["city", "kansas city"], ["country", "UM"], ["phone_number", "9139092333"], ["created_at", "2018-07-27 22:50:53.017697"], ["updated_at", "2018-07-27 22:50:53.017697"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 23ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2018-07-27 17:50:53 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 58ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-07-27 17:51:06 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 67ms (Views: 63.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-07-27 17:51:38 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 40ms (Views: 37.5ms)
+
+
+Started GET "/" for ::1 at 2018-07-27 17:53:26 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 48ms (Views: 44.3ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-27 17:53:28 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 92ms (Views: 72.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-27 17:53:39 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `zipcode' for #<Wizard::User::Step1:0x00007fae28c9a3f0>
+Did you mean?  zip_code
+               zip_code=):
+     9:   <%= f.error_notification %>
+    10: 
+    11:   <%= hidden_field_tag :current_step, 'step1' %>
+    12:   <%= f.input :zipcode %>
+    13: 
+    14:   <%= f.submit 'Continue' %>
+    15: <% end %>
+  
+app/views/wizards/step1.html.erb:12:in `block in _app_views_wizards_step__html_erb___157941674136339511_70192992666900'
+app/views/wizards/step1.html.erb:8:in `_app_views_wizards_step__html_erb___157941674136339511_70192992666900'
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.1ms)
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (146.9ms)
+Started GET "/wizard/step1" for ::1 at 2018-07-27 17:54:02 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 66ms (Views: 61.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-07-27 17:54:07 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 47ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-27 17:54:08 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 68ms (Views: 65.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-07-27 17:55:52 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 459ms (Views: 272.7ms)
+
+
+Started GET "/" for ::1 at 2018-07-27 17:57:11 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 71ms (Views: 66.2ms)
+
+
+Started GET "/" for ::1 at 2018-07-27 17:57:39 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 83ms (Views: 68.0ms)
+
+
+Started GET "/" for ::1 at 2018-07-27 17:57:46 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 65ms (Views: 61.6ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-27 17:57:49 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (59.1ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 205ms (Views: 97.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-27 17:59:16 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+Completed 200 OK in 83ms (Views: 79.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-07-27 17:59:17 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+Completed 200 OK in 59ms (Views: 56.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-27 17:59:30 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 60ms (Views: 57.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/wizard/validate_step" for ::1 at 2018-07-27 17:59:37 -0500
+Processing by WizardsController#validate_step as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tIsW/uQD8JJkamNszNnjprRtTiUeBfT25PYYe08AmhIl1pZUr7fbTb+6cGDTz98kC2Ak8pRwQEvPmK+KwieN4w==", "current_step"=>"step1", "user_wizard"=>{"zip_code"=>"10001"}, "commit"=>"Continue"}
+Redirected to http://localhost:3000/wizard/step2
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-27 17:59:37 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 55ms (Views: 52.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-07-27 18:13:17 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 572ms (Views: 392.4ms)
+
+
+Started GET "/" for ::1 at 2018-07-27 18:14:14 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 120ms (Views: 115.0ms)
+
+
+Started GET "/wizard/validate_step" for ::1 at 2018-07-27 18:14:17 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/wizard/validate_step"):
+  
+actionpack (5.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7) lib/rails/engine.rb:522:in `call'
+rack (2.0.5) lib/rack/handler/webrick.rb:86:in `service'
+/Users/BME/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+/Users/BME/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+/Users/BME/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered collection of /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [13 times] (11.1ms)
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.0ms)
+  Rendering /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/BME/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (169.6ms)
+Started GET "/wizard/step1" for ::1 at 2018-07-27 18:15:33 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (61.7ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+Completed 200 OK in 200ms (Views: 79.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-27 18:16:00 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-27 18:16:02 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 21ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-27 18:16:04 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_nav.html.erb (0.2ms)
+Completed 200 OK in 32ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-27 18:16:06 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_nav.html.erb (0.2ms)
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-27 18:17:46 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-07-27 18:17:49 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 28ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-27 18:17:51 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 22ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-27 18:17:58 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+Completed 200 OK in 38ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-27 18:18:03 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-27 18:18:04 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_nav.html.erb (0.2ms)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-07-27 18:18:07 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_nav.html.erb (0.2ms)
+Completed 200 OK in 27ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-27 18:18:11 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-27 18:19:14 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_nav.html.erb (0.2ms)
+Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-27 18:19:20 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-07-27 18:19:45 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 29ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/" for ::1 at 2018-07-27 22:41:47 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 81ms (Views: 70.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-27 22:41:51 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (11.7ms)
+  Rendered layouts/_nav.html.erb (1.4ms)
+Completed 200 OK in 65ms (Views: 57.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-07-27 22:42:58 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 63ms (Views: 53.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-27 22:43:02 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_nav.html.erb (1.4ms)
+Completed 200 OK in 36ms (Views: 32.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-07-27 22:44:01 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+Completed 200 OK in 38ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-27 22:44:06 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+Completed 200 OK in 37ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-07-27 22:44:17 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 73ms (Views: 69.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-07-27 22:47:52 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 24ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-27 22:48:39 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+Completed 200 OK in 27ms (Views: 24.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/wizard/validate_step" for ::1 at 2018-07-27 22:48:43 -0500
+Processing by WizardsController#validate_step as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HXMGnLb8AwcJwqt44qJmLY8Phwe9pTV/7t2D2VBhCYpQOyETi9uz81//hFG3dOHAv8YEIcg8ramcIMp7YJnB1Q==", "current_step"=>"step1", "user_wizard"=>{"zip_code"=>"66212"}, "commit"=>"Continue"}
+Redirected to http://localhost:3000/wizard/step2
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-27 22:48:43 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (11.1ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 34ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-27 22:48:49 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 23ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/wizard/validate_step" for ::1 at 2018-07-27 22:49:01 -0500
+Processing by WizardsController#validate_step as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xivbSZYwOBw5U+uP6VPkUlePBwt4PyQ/udCQu4O6kEaLY/zGqxeI6G9uxKa8hWO/Z0aELQ2mvOnLLdkZs0JYGQ==", "current_step"=>"step1", "user_wizard"=>{"zip_code"=>"66212"}, "commit"=>"Continue"}
+Redirected to http://localhost:3000/wizard/step2
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-27 22:49:01 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_nav.html.erb (0.2ms)
+Completed 200 OK in 23ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-27 22:49:19 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 53ms (Views: 28.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-27 22:49:39 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (15.0ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+Completed 200 OK in 55ms (Views: 51.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-27 22:52:53 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+Completed 200 OK in 35ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-27 22:53:00 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 28ms (Views: 25.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-27 22:53:06 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 38ms (Views: 33.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-27 22:53:16 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 21ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-27 22:53:18 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+Completed 200 OK in 31ms (Views: 28.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-27 22:53:30 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 23ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-27 22:56:01 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+Completed 200 OK in 38ms (Views: 34.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-27 22:56:03 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+Completed 200 OK in 32ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-27 22:56:54 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 23ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-27 22:59:02 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 56ms (Views: 52.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-27 22:59:07 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 25ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/wizard/validate_step" for ::1 at 2018-07-27 22:59:28 -0500
+Processing by WizardsController#validate_step as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OPQ8bbloaqfhYItBUo/c+Qb+HwFPUw0eiShXb0BiX7x1vBvihE/aU7ddpGgHWVsUNjecJzrKlcj71R7NcJqX4w==", "current_step"=>"step1", "user_wizard"=>{"zip_code"=>"66212"}, "commit"=>"Continue"}
+Redirected to http://localhost:3000/wizard/step2
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-27 22:59:28 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 25ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-27 23:00:01 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-27 23:00:32 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+Completed 200 OK in 31ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-07-27 23:00:41 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 23ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-27 23:00:49 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 25ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-07-27 23:01:11 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+Completed 200 OK in 28ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-27 23:01:15 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-27 23:02:32 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+Completed 200 OK in 29ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/wizard/validate_step" for ::1 at 2018-07-27 23:02:35 -0500
+Processing by WizardsController#validate_step as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0ufvEoVU6neAl9VP3/cSgtH1W0YpZg4Rojd2ykUZypYOZlKkQBcSmBtaZn7gZAo/JGxCmQod2gj/9zcI/yiSPg==", "current_step"=>"step1", "user_wizard"=>{"zip_code"=>"66212"}, "commit"=>"Continue"}
+Redirected to http://localhost:3000/wizard/step2
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-27 23:02:35 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 30ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-27 23:08:43 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (17.2ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 61ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-27 23:17:18 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (27.2ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 110ms (Views: 90.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-27 23:19:46 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 24ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-27 23:20:51 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-27 23:21:05 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 31ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-27 23:21:35 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 25ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-27 23:22:16 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 26ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-27 23:22:18 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_nav.html.erb (1.6ms)
+Completed 200 OK in 28ms (Views: 24.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-27 23:22:49 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (10.7ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 34ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 10:23:53 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (36.4ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+Completed 200 OK in 94ms (Views: 74.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 10:24:59 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (7.8ms)
+  Rendered layouts/_nav.html.erb (2.4ms)
+Completed 200 OK in 41ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 10:26:54 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 24ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 10:29:02 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+Completed 200 OK in 24ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 10:29:32 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 10:30:46 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 23ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 10:31:14 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (9.5ms)
+  Rendered layouts/_nav.html.erb (1.6ms)
+Completed 200 OK in 39ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 10:37:07 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+Completed 200 OK in 26ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 10:37:47 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+Completed 200 OK in 31ms (Views: 27.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 10:43:22 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+Completed 200 OK in 27ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 10:45:10 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (21.7ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+Completed 200 OK in 68ms (Views: 52.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 10:46:07 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+Completed 200 OK in 28ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 10:47:07 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 31ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 10:48:36 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (11.2ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+Completed 200 OK in 78ms (Views: 74.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 10:48:52 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 10:48:54 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+Completed 200 OK in 24ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 10:49:12 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 10:50:53 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 26ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 10:52:23 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 21ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 10:52:24 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 10:53:32 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 31ms (Views: 27.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 10:54:34 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 10:54:47 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 24ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 10:55:21 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+Completed 200 OK in 27ms (Views: 24.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 10:56:25 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 25ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 10:56:59 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (35.7ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 56ms (Views: 51.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 10:57:25 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 22ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 10:57:44 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 20ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 10:58:33 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 22ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-07-28 10:58:46 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 17ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-28 10:58:51 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 21ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/wizard/validate_step" for ::1 at 2018-07-28 10:59:06 -0500
+Processing by WizardsController#validate_step as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fdS0vfU7Bu2OITAhlmNR4F2H3SPa6AHSu6qCJft5QDtgBwchgEX3Z9l1LVlniK7e/l6Ik5Np/fAYr8/G5OdcUA==", "current_step"=>"step1", "user_wizard"=>{"zip_code"=>"66212"}, "commit"=>"Continue"}
+Redirected to http://localhost:3000/wizard/step2
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 10:59:06 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-28 11:00:51 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+Completed 200 OK in 24ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/wizard/validate_step" for ::1 at 2018-07-28 11:00:52 -0500
+Processing by WizardsController#validate_step as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MV889Zzny5EIqV+Ii6tDKMNUoSNy5JJKXi1npm7gQR8sjI9p6Zk6G1/9QvB6QLwWYI30kztlbmj9KCpFcX5ddA==", "current_step"=>"step1", "user_wizard"=>{"zip_code"=>"66212"}, "commit"=>"Continue"}
+Redirected to http://localhost:3000/wizard/step2
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 11:00:52 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (8.3ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 39ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 11:02:32 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 29ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-07-28 11:04:38 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 32ms (Views: 27.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-28 11:05:04 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 29ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-28 11:06:07 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 74ms (Views: 70.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-28 11:06:43 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 84ms (Views: 81.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-28 11:07:10 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 38ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-28 11:07:46 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 31ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-28 11:07:58 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 26ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/wizard/validate_step" for ::1 at 2018-07-28 11:08:33 -0500
+Processing by WizardsController#validate_step as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Rt4j6CsY7LByfg1F42fDYxnZ/w7Dp+dSkQrU8dmq/9JbDZB0XmYdOiUqED0SjDxdugCqvoomG3AyD5kSxjTjuQ==", "current_step"=>"step1", "user_wizard"=>{"zip_code"=>"66212"}, "commit"=>"Get Started"}
+Redirected to http://localhost:3000/wizard/step2
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 11:08:34 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 11:09:24 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 45ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 11:11:14 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 35ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 11:12:08 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 31ms (Views: 27.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 11:12:16 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 11:14:33 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 33ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 11:23:40 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 30ms (Views: 27.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/wizard/validate_step" for ::1 at 2018-07-28 11:23:48 -0500
+Processing by WizardsController#validate_step as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jw5PSxke4Gy/CQDY+tLgFCVNiWrZBXETzUCS1qLZ3g2S3fzXbGAR5uhdHaALOR8qhpTc2pCEjTFuRd81vUfCZg==", "current_step"=>"step2", "user_wizard"=>{"first_name"=>"blake", "last_name"=>"epstein"}, "commit"=>"Continue"}
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (33.7ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 61ms (Views: 52.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/wizard/validate_step" for ::1 at 2018-07-28 11:23:51 -0500
+Processing by WizardsController#validate_step as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iRugMYyKrSl51+CNrG1G5xF0ZlayTW8kkuxRBkQSBn6UyBOt+fRcoy6D/fVdhrnZsq0z5vvMkwYx6RzlW4waFQ==", "current_step"=>"step2", "user_wizard"=>{"first_name"=>"blake", "last_name"=>"epstein"}, "commit"=>"Continue"}
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 28ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/wizard/validate_step" for ::1 at 2018-07-28 11:24:03 -0500
+Processing by WizardsController#validate_step as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Kb07uRVWDHNUsweKusqreexGObMTtLfHR/wrnFVqbvk0boglYCj9+QPnGvJLIVRHT59sA1o1S+Xk+WZ/SvRykg==", "current_step"=>"step2", "user_wizard"=>{"first_name"=>"blake", "last_name"=>"epstein"}, "commit"=>"Continue"}
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 24ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/wizard/validate_step" for ::1 at 2018-07-28 11:24:28 -0500
+Processing by WizardsController#validate_step as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Kb07uRVWDHNUsweKusqreexGObMTtLfHR/wrnFVqbvk0boglYCj9+QPnGvJLIVRHT59sA1o1S+Xk+WZ/SvRykg==", "current_step"=>"step2", "user_wizard"=>{"first_name"=>"blake", "last_name"=>"epstein"}, "commit"=>"Continue"}
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 27ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/wizard/validate_step" for ::1 at 2018-07-28 11:24:32 -0500
+Processing by WizardsController#validate_step as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tmp6NKVUahDeULscxDO5d2G0qHN8tH3ezrWjTCCAaGmrucmo0CqbmokEpmQ12EZJwm39wzU1gfxtsO6vPx50Ag==", "current_step"=>"step2", "user_wizard"=>{"first_name"=>"blakeasdfa", "last_name"=>"epstasdfasdfein"}, "commit"=>"Continue"}
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-07-28 11:24:48 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 23ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step1" for ::1 at 2018-07-28 11:24:51 -0500
+Processing by WizardsController#step1 as HTML
+  Rendering wizards/step1.html.erb within layouts/application
+  Rendered wizards/step1.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 22ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/wizard/validate_step" for ::1 at 2018-07-28 11:24:54 -0500
+Processing by WizardsController#validate_step as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3kxi1i+HM8iJDG742ewWqFQpPAXgHmN0pYb6jhTebBPDn9FKWvnCQt5Yc4AoB+mW9/Bptamfn1YGg7dtC0BweA==", "current_step"=>"step1", "user_wizard"=>{"zip_code"=>"66212"}, "commit"=>"Get Started"}
+Redirected to http://localhost:3000/wizard/step2
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/wizard/step2" for ::1 at 2018-07-28 11:24:54 -0500
+Processing by WizardsController#step2 as HTML
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_nav.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 23ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/wizard/validate_step" for ::1 at 2018-07-28 11:24:57 -0500
+Processing by WizardsController#validate_step as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iG9iEvO0uxzientw15PLmf/SHRua/KE3Sk9X4cHeTvGVvNGOhspKlrUuZggmeDSnXAtIq9N9XRXpShoC3kBSmg==", "current_step"=>"step2", "user_wizard"=>{"first_name"=>"blakeasdfa", "last_name"=>"epstasdfasdfein"}, "commit"=>"Continue"}
+  Rendering wizards/step2.html.erb within layouts/application
+  Rendered wizards/step2.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 21ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
